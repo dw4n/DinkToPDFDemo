@@ -1,0 +1,1892 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,100..700,0..1,-50..200" />
+    <style type='text/css'>
+        :root {
+            --color-white: #ffffff;
+            --color-text-primary: #333333;
+            --color-text-secondary: #999999;
+            --color-text-blue: #00577E;
+            --color-text-green: #53802E;
+            --color-bg-green: #BCDBA2;
+            --color-bg-blue: #0097DA;
+            --color-border: #cccccc;
+            --color-star: #F8D138;
+            --bold: 600;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        @page {
+            size: A4;
+            margin: 0;
+            box-shadow: none;
+
+            @bottom-left {
+                content: counter(page) ' of ' counter(pages);
+            }
+        }
+
+        html {
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+
+        body {
+            width: 1200px;
+        }
+
+        .page-header-space {
+            height: 56px;
+        }
+
+        .page-footer-space {
+            height: 56px;
+        }
+
+        body {
+            background: linear-gradient(90deg, var(--color-bg-blue) 0%, var(--color-bg-blue) 33%, var(--color-white) 33%, var(--color-white) 100%) !important;
+            color: var(--color-text-primary) !important;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            text-align: left;
+            line-height: 1.5;
+            width: 1200px;
+        }
+
+        tr > th {
+            padding-bottom: 8px;
+        }
+
+        tr > td {
+            padding-bottom: 8px;
+            padding-top: 8px;
+            position: relative;
+            page-break-inside: avoid;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: var(--bold);
+            color: var(--color-white) !important;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: var(--bold);
+            color: var(--color-text-blue) !important;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: var(--bold);
+            color: var(--color-white) !important;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: var(--bold);
+            color: var(--color-text-primary) !important;
+        }
+
+        h5 {
+            font-size: 14px;
+            font-weight: var(--bold);
+            color: var(--color-text-primary) !important;
+        }
+
+        h6 {
+            font-size: 12px;
+            font-weight: var(--bold);
+            color: var(--color-white) !important;
+        }
+
+        progress {
+            width: 100%;
+            accent-color: var(--color-text-blue) !important;
+        }
+
+        .material-symbols-rounded.star {
+            color: var(--color-white) !important;
+        }
+
+        .material-symbols-rounded.star-1-1,
+        .material-symbols-rounded.star-1-2,
+        .material-symbols-rounded.star-1-3,
+        .material-symbols-rounded.star-2-2,
+        .material-symbols-rounded.star-2-3,
+        .material-symbols-rounded.star-3-3 {
+            font-variation-settings: 'FILL' 1;
+            color: var(--color-star) !important;
+        }
+
+        .text-white {
+            color: var(--color-white) !important;
+        }
+
+        .text-secondary {
+            color: var(--color-text-secondary) !important;
+        }
+
+        .font-10 {
+            font-size: 10px;
+        }
+
+
+        .font-12 {
+            font-size: 12px;
+        }
+
+        .font-14 {
+            font-size: 14px;
+        }
+
+        .font-16 {
+            font-size: 16px;
+        }
+
+        .bold {
+            font-weight: var(--bold);
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .content {
+            width: 1200px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+
+        .content__left {
+            width: 33%;
+            gap: 56px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 0px 40px;
+        }
+
+        .content__right {
+            width: 67%;
+            gap: 24px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 0px 48px;
+        }
+
+        .photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--color-white) !important;
+            background-color: var(--color-white) !important;
+            object-fit: cover;
+            object-position: top !important;
+            vertical-align: middle;
+        }
+
+        .icon {
+            background: var(--color-white) !important;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-text-blue) !important;
+        }
+
+        .icon__img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .flex-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .gap-4 {
+            gap: 4px;
+        }
+
+        .gap-8 {
+            gap: 8px;
+        }
+
+        .gap-16 {
+            gap: 16px;
+        }
+
+        .gap-32 {
+            gap: 32px;
+        }
+
+        .bullet {
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            background-color: var(--color-bg-blue) !important;
+        }
+
+
+        .dot {
+            height: 6px;
+            width: 6px;
+            border-radius: 3px;
+            background-color: var(--color-text-secondary) !important;
+        }
+
+        .items-start {
+            align-items: start;
+        }
+
+        .chip {
+            font-size: 10px;
+            background-color: var(--color-bg-green) !important;
+            color: var(--color-text-green) !important;
+            padding: 0px 8px;
+            border-radius: 10px;
+            font-weight: var(--bold);
+        }
+
+        .ml-24 {
+            margin-left: 24px;
+        }
+
+        .time-line {
+            position: absolute;
+            height: 101%;
+            width: 3px;
+            background-color: var(--color-border) !important;
+            z-index: -1;
+            left: 3px;
+        }
+
+        .is-shown-false {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <div class="page-header-space"></div>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="content">
+                        <!-- #region LEFT CONTENT -->
+                        <div class="content__left">
+                            <!-- #region IDENTITY -->
+                            <div class="flex-col gap-16">
+                                <img class="photo" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                <div class="flex-col gap-4">
+                                    <h1>Steve Jobs</h1>
+                                    <!-- <p class="font-16 text-white">sjobs001</p> -->
+                                </div>
+                            </div>
+                            <!-- #endregion -->
+                            <!-- #region PERSONAL INFO -->
+                            <div class="flex-col gap-16 is-shown-true">
+                                <h3 class="text-white">Personal Information</h3>
+                                <div class="flex-row gap-8">
+                                    <div class="icon">
+                                        <span class="material-symbols-rounded">
+                                            mail
+                                        </span>
+                                    </div>
+                                    <div class="flex-col gap-4">
+                                        <h6 class="text-white">EMAIL</h6>
+                                        <p class="font-14 text-white">SteveJobs@apple.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex-row gap-8">
+                                    <div class="icon">
+                                        <span class="material-symbols-rounded">
+                                            call
+                                        </span>
+                                    </div>
+                                    <div class="flex-col gap-4">
+                                        <h6 class="text-white">PHONE NUMBER</h6>
+                                        <p class="font-14 text-white">123-456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="flex-row gap-8">
+                                    <div class="icon">
+                                        <span class="material-symbols-rounded">
+                                            book_2
+                                        </span>
+                                    </div>
+                                    <div class="flex-col gap-4">
+                                        <h6 class="text-white">PROGRAM</h6>
+                                        <p class="font-14 text-white">Computer Science</p>
+                                    </div>
+                                </div>
+                                <div class="flex-row gap-8">
+                                    <div class="icon">
+                                        <span class="material-symbols-rounded">
+                                            school
+                                        </span>
+                                    </div>
+                                    <div class="flex-col gap-4">
+                                        <h6 class="text-white">DEGREE TITLE</h6>
+                                        <p class="font-14 text-white">Bachelor of Science</p>
+                                    </div>
+                                </div>
+                                <div class="flex-row gap-8">
+                                    <div class="icon">
+                                        <span class="material-symbols-rounded">
+                                            home_work
+                                        </span>
+                                    </div>
+                                    <div class="flex-col gap-4">
+                                        <h6 class="text-white">CAMPUS</h6>
+                                        <p class="font-14 text-white">BINUS University</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #endregion -->
+                            <!-- #region SOFT SKILLS -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h3 class="text-white">Soft-Skill</h3>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row text-white gap-4 justify-content-between">
+                                                    <p class="font-14">Visionary Leadership</p>
+                                                    <p class="font-10">10/10</p>
+                                                </div>
+                                                <progress id="soft-skill-Visionary Leadership" value="10" max="10">10/10</progress>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row text-white gap-4 justify-content-between">
+                                                    <p class="font-14">Persuasive Communication</p>
+                                                    <p class="font-10">9/10</p>
+                                                </div>
+                                                <progress id="soft-skill-Persuasive Communication" value="9" max="10">9/10</progress>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row text-white gap-4 justify-content-between">
+                                                    <p class="font-14">Creative Thinking</p>
+                                                    <p class="font-10">10/10</p>
+                                                </div>
+                                                <progress id="soft-skill-Creative Thinking" value="10" max="10">10/10</progress>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row text-white gap-4 justify-content-between">
+                                                    <p class="font-14">Resilience</p>
+                                                    <p class="font-10">8/10</p>
+                                                </div>
+                                                <progress id="soft-skill-Resilience" value="8" max="10">8/10</progress>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row text-white gap-4 justify-content-between">
+                                                    <p class="font-14">Collaboration</p>
+                                                    <p class="font-10">9/10</p>
+                                                </div>
+                                                <progress id="soft-skill-Collaboration" value="9" max="10">9/10</progress>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region SOFTWARE SKILLS -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h3 class="text-white">Software-Skill</h3>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <div class="icon">
+                                                    <img class="icon__img" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                </div>
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <div class="flex-row text-white gap-4 justify-content-between">
+                                                        <p class="font-14">Apple Technologies</p>
+                                                        <p class="font-10">10/10</p>
+                                                    </div>
+                                                    <progress id="soft-skill-Apple Technologies" value="10" max="10">10/10</progress>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <div class="icon">
+                                                    <img class="icon__img" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                </div>
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <div class="flex-row text-white gap-4 justify-content-between">
+                                                        <p class="font-14">Design Software</p>
+                                                        <p class="font-10">10/10</p>
+                                                    </div>
+                                                    <progress id="soft-skill-Design Software" value="10" max="10">10/10</progress>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <div class="icon">
+                                                    <img class="icon__img" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                </div>
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <div class="flex-row text-white gap-4 justify-content-between">
+                                                        <p class="font-14">Programming</p>
+                                                        <p class="font-10">9/10</p>
+                                                    </div>
+                                                    <progress id="soft-skill-Programming" value="9" max="10">9/10</progress>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <div class="icon">
+                                                    <img class="icon__img" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                </div>
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <div class="flex-row text-white gap-4 justify-content-between">
+                                                        <p class="font-14">Project Management Tools</p>
+                                                        <p class="font-10">8/10</p>
+                                                    </div>
+                                                    <progress id="soft-skill-Project Management Tools" value="8" max="10">8/10</progress>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <div class="icon">
+                                                    <img class="icon__img" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                </div>
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <div class="flex-row text-white gap-4 justify-content-between">
+                                                        <p class="font-14">Marketing Tools</p>
+                                                        <p class="font-10">9/10</p>
+                                                    </div>
+                                                    <progress id="soft-skill-Marketing Tools" value="9" max="10">9/10</progress>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region BGA -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h3 class="text-white">Binus Graduate Attributes</h3>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <img class="icon" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <p class="font-14 text-white">Innovator</p>
+                                                    <div class="flex-row">
+                                                        <span class="material-symbols-rounded star star-1-3">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-2-3">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-3-3">
+                                                            star
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <img class="icon" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <p class="font-14 text-white">Visionary</p>
+                                                    <div class="flex-row">
+                                                        <span class="material-symbols-rounded star star-1-2">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-2-2">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-3-2">
+                                                            star
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <img class="icon" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <p class="font-14 text-white">Leader</p>
+                                                    <div class="flex-row">
+                                                        <span class="material-symbols-rounded star star-1-1">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-2-1">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-3-1">
+                                                            star
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <img class="icon" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <p class="font-14 text-white">Strategist</p>
+                                                    <div class="flex-row">
+                                                        <span class="material-symbols-rounded star star-1-1">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-2-1">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-3-1">
+                                                            star
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-row gap-8 w-full">
+                                                <img class="icon" src="https://picsum.photos/seed/face/400/600" alt="" />
+                                                <div class="flex-col gap-4 flex-1">
+                                                    <p class="font-14 text-white">Mentor</p>
+                                                    <div class="flex-row">
+                                                        <span class="material-symbols-rounded star star-1-2">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-2-2">
+                                                            star
+                                                        </span>
+                                                        <span class="material-symbols-rounded star star-3-2">
+                                                            star
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                        </div>
+                        <!-- #endregion -->
+                        <!-- #region RIGHT CONTENT -->
+                        <div class="content__right">
+
+                            <!-- #region WORKING EXPERIENCES -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Working Experience</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <p class="font-16">2 March 2021 - 2 June 2024</p>
+                                                </div>
+                                                <p class="font-16 ml-24 bold">Apple Inc. - CEO</p>
+                                                <p class="font-16 ml-24">Supervisor: Tim Cook</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <p class="font-16">2 March 2021 - 2 June 2024</p>
+                                                </div>
+                                                <p class="font-16 ml-24 bold">NeXT Inc. - Founder &amp; CEO</p>
+                                                <p class="font-16 ml-24">Supervisor: Steve Jobs</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <p class="font-16">2 March 2021 - 2 June 2024</p>
+                                                </div>
+                                                <p class="font-16 ml-24 bold">Pixar - CEO</p>
+                                                <p class="font-16 ml-24">Supervisor: Ed Catmull</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <p class="font-16">2 March 2021 - 2 June 2024</p>
+                                                </div>
+                                                <p class="font-16 ml-24 bold">Atari Inc. - Technician</p>
+                                                <p class="font-16 ml-24">Supervisor: Nolan Bushnell</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <p class="font-16">2 March 2021 - 2 June 2024</p>
+                                                </div>
+                                                <p class="font-16 ml-24 bold">Disney - Board Member</p>
+                                                <p class="font-16 ml-24">Supervisor: Bob Iger</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region ORGANIZATION EXPERIENCES -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Organization Experience</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Pixar</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">Co-Founder</p>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16 text-secondary">International</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16 text-secondary">
+                                                        February 1986 - May
+                                                        2006
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Apple</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">Co-Founder</p>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16 text-secondary">International</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16 text-secondary">
+                                                        April 1976 - August
+                                                        2011
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>NeXT</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">Founder</p>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16 text-secondary">International</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16 text-secondary">
+                                                        September 1985 - December
+                                                        1997
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Atari</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">Technician</p>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16 text-secondary">National</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16 text-secondary">
+                                                        June 1974 - April
+                                                        1976
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="time-line"></div>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Disney</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">Board Member</p>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16 text-secondary">International</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16 text-secondary">
+                                                        July 2004 - August
+                                                        2011
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region ACHIEVEMENTS -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Achievement & Recognition</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Business at Fortune's Most Powerful Businessmen</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">International</p>
+                                                <p class="font-16 ml-24 text-secondary">2007</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Technology at Time's Person of the Year</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">International</p>
+                                                <p class="font-16 ml-24 text-secondary">2010</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Technology at National Medal of Technology</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">National</p>
+                                                <p class="font-16 ml-24 text-secondary">1985</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Entertainment at Grammy Trustees Award</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">International</p>
+                                                <p class="font-16 ml-24 text-secondary">2012</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Innovation at California Hall of Fame</h4>
+                                                </div>
+                                                <p class="font-16 ml-24">State</p>
+                                                <p class="font-16 ml-24 text-secondary">2007</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region CERTIFICATE -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Professional Certificate</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Technology</h4>
+                                                </div>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16">cert001</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16">Stanford University</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Management</h4>
+                                                </div>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16">cert002</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16">Harvard Business School</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Design</h4>
+                                                </div>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16">cert003</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16">Rhode Island School of Design</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Marketing</h4>
+                                                </div>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16">cert004</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16">Wharton School of Business</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <h4>Entrepreneurship</h4>
+                                                </div>
+                                                <p class="flex-row gap-8 ml-24">
+                                                    <span class="font-16">cert005</span>
+                                                    <span class="dot"></span>
+                                                    <span class="font-16">MIT Sloan School of Management</span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region MENTORING -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Mentoring</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Innovation in Technology</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">User-Centered Design</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Brand Building</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Startup Culture</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Disruptive Innovation</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region TUTORING -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Tutoring</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Design Thinking</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Building a Brand</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Adopting New Technologies</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Managing Teams</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Starting a Company</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region RESPONSI -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Responsi</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Building a Tech Company</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Creating Revolutionary Products</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Designing Intuitive Interfaces</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Leading with Vision</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-16">
+                                                <div class="flex-col gap-4">
+                                                    <div class="flex-row gap-16 align-items-start">
+                                                        <div class="bullet"></div>
+                                                        <div class="flex-row gap-4 flex-1">
+                                                            <h4>Steve Jobs</h4>
+                                                            <span class="chip">Professional</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-row gap-8 ml-24">
+                                                        <p class="font-14">1</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Innovation</p>
+                                                        <div class="dot"></div>
+                                                        <p class="font-14">Computer Science</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ml-24 flex-row gap-32">
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            START TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            END TIME
+                                                        </p>
+                                                        <p class="font-14">Jun 28, 2024</p>
+                                                    </div>
+                                                    <div class="flex-col gap-4">
+                                                        <p class="font-12 text-secondary">
+                                                            TOPIC
+                                                        </p>
+                                                        <p class="font-14">Creating Hype</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region FOSTERING -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Student Activity</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>Stanford Commencement Speech - 2005</h4>
+                                                        <span class="chip">Speaker</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Stanford University</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iPhone Launch - 2007</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Apple Inc.</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iMac Launch - 1999</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Apple Inc.</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iPod Launch - 2001</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Apple Inc.</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iTunes Launch - 2003</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Apple Inc.</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                            <!-- #region EMPOWERING -->
+                            <table class="is-shown-true">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Social Activity</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iPhone Launch - 2007</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Technology</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iPad Launch - 2010</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Technology</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iMac Launch - 1998</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Technology</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iPod Launch - 2001</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Technology</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="flex-col gap-4">
+                                                <div class="flex-row gap-16 align-items-start">
+                                                    <div class="bullet"></div>
+                                                    <div class="flex-row gap-4 flex-1">
+                                                        <h4>iTunes Launch - 2003</h4>
+                                                        <span class="chip">Presenter</span>
+                                                    </div>
+                                                </div>
+                                                <p class="font-16 ml-24">Technology</p>
+                                                <p class="font-16 ml-24 text-secondary">International</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- #endregion -->
+                        </div>
+                        <!-- #endregion -->
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <div class="page-footer-space"></div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

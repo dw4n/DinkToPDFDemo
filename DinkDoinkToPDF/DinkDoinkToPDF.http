@@ -1,0 +1,6 @@
+@DinkDoinkToPDF_HostAddress = http://localhost:5226
+
+GET {{DinkDoinkToPDF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
